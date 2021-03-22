@@ -13,7 +13,7 @@ React.js, React-Redux, Material UI, Node, Express, PostgreSQL, Sequelize ORM.
 
 #### Host
 <ul>
-  <li>Add items to the cart</li>
+  <li>Add items to cart</li>
   <li>Purchase items</li>
   <li>Refresh page and conserve the state</li>
 </ul>
