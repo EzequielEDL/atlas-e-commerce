@@ -30,7 +30,7 @@ React.js, React-Redux, Material UI, Node, Express, PostgreSQL, Sequelize ORM.
   <li>Same as registered user</li>
   <li>Create, edit and delete products</li>
   <li>Create, edit, and delete categories</li>
-  <li>Change orders status (add items or purchase make an order with the status of the operation)</li>
+  <li>Change orders status (add or purchase items make an order with the status of the operation)</li>
   <li>Promote users (make admin)</li>
 </ul>
 
