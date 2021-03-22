@@ -1,0 +1,83 @@
+/* .svg-animation-container {
+  background: radial-gradient(circle, rgba(42,43,55,0.4) 0%, rgba(42,43,55,0) 60%);
+  padding: 24px;
+  margin: 0 auto;
+  border-radius: 100%;
+  height: 500px;
+  width: 500px;
+}
+
+.rocketAnim svg {
+  width: 100%;
+  height: 100%;
+  transform: rotate(45deg);
+} */
+
+#rocket {
+  animation: fly 1s infinite ease alternate;
+  transform-origin: center;
+}
+
+@keyframes fly {
+  0% {
+    transform: translateY(200px) scale(0.6);
+  }
+  100% {
+    transform: translateY(0px) scale(1.05);
+  }
+}
+
+#engineSides {
+  animation: burn-center 1s infinite ease alternate;
+  transform-origin: bottom;
+  transform-box: fill box;
+}
+
+#engineCenter {
+  animation: burn-sides 1s infinite ease alternate;
+  transform-origin: bottom;
+  transform-box: fill box;
+}
+
+@keyframes burn-center {
+  0% {
+    transform: scaleY(1.5);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes burn-sides {
+  0% {
+    transform: scaleY(1);
+  }
+  100% {
+    transform: scaleY(1.1);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform : rotate(45deg);
+  }
+  to {
+    transform : rotate(405deg);
+  }
+}
+
+#orbit {
+  transform-origin : center;
+  animation-delay : .4s;
+  animation : rotate 2s infinite;
+}
+
+div {
+  overflow : visible;
+}
+
+svg {
+  overflow : visible;
+  width : 350px;
+  height : 350px;
+}
